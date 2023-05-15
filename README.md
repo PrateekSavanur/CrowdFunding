@@ -29,3 +29,10 @@ This is a Solidity smart contract that enables the creation of a crowdfunding ca
 ### Contract Modifiers
 
 - `OnlyOwner()` - a modifier that restricts the execution of a function to the campaign manager. The modifier checks if the user calling the function is the campaign manager. If the check fails, the function execution is halted.
+
+
+Project Setup:
+The project can be downloaded or cloned from the GitHub repository. It requires the Solidity compiler version 0.8.0 or higher to compile the smart contract file. After compiling the contract, it can be deployed to an Ethereum network using a compatible blockchain development platform like Remix or Truffle.
+
+Project Usage:
+After deploying the contract, contributors can send ether to the contract using the "sendEth" function. The contract manager can create requests using the "createRequest" function, and contributors can vote on these requests using the "vote" function. The contract manager can finalize a request using the "Result" function, which will transfer the requested ether to the recipient. Contributors can also receive a refund using the "refund" function if the campaign deadline has passed and the target amount has not been reached.
